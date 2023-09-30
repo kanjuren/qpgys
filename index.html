@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="never">
+    <meta charset="UTF-8">
+    <title>青苹果影视APP官方下载-qpgvod.app｜APP下载</title>
+    <meta name="keywords" content="青苹果影视,在线电影,看片神器,永久免费">
+    <meta name="description" content="青苹果影视-APP！ 是一款手机看片神器。为你提供最新电影和电视剧，时时更新!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="static/picture/favicon.ico" type="image/x-icon">
+	<meta name="referrer" content="never">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.easing.1.3.js"></script>
+    <script src="static/js/jquery.scrollify.js"></script>
+    <script src="static/js/jquery.qrcode.js"></script>
+    <script src="static/js/utf.js"></script>
+    <script>
+        function autoDownload(down) {
+            // 添加ios用户手机百度的UA判断
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {         //移动终端浏览器版本信息
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            }
+            if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+                var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+                var u = navigator.userAgent;
+                var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+                var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            }
+            var systemName = getMobileOperatingSystem();//设备
+            urls = {
+                'android':'https://m.juqing123.cc/qpgxz.php',
+                'ios':'itms-services://?action=download-manifest&amp;url=https://m.juqing123.cc/qpgxz2.php',
+            };
+            if (down === 'Android') {
+                if(isAndroid){
+                    window.location.href=urls.android;
+                }else{
+                    if (systemName === "iOS") {//提示苹果
+                        $('.alert-content').html('请点击IOS下载!');
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }else{ //扫二维码
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }
+                }
+            } else if (down === 'iOS') {
+                if(isiOS){
+                    $(".down_teacher").show();
+                    $('.mask').show();
+                    $('.overlay'). slideDown('slow');
+                    window.location.href=urls.ios;
+                }else{
+                    if (systemName === 'Android') {//提示安卓
+                        $('.alert-content').html('请点击Android下载!');
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }else{ //扫二维码
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }
+                }
+            }
+        }
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+            return "unknown";
+        }
+    </script>
+    <style>
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .lightSpeedIn {
+            -webkit-animation-name: lightSpeedIn;
+            animation-name: lightSpeedIn;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        @-webkit-keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:none;transform:none;opacity:1}}
+        @keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:none;transform:none;opacity:1}}
+        .lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}
+    </style>
+</head>
+<body>
+<table class="nav white_nav">
+    <tr>
+        <td style="width:210px;padding-left: 50px">
+        </td>
+        <td style="font-size: 30px">青苹果影视-qpgvod.app</td>
+    </tr>
+</table>
+<div class="content" >
+    <div class="page page_one">
+        <img style="left: auto" class="home active" src="https://p1.meituan.net/mmdb/8514d3256d3849278575deb287c6ce92151338.jpg" alt="">
+   
+    </div>
+</div>
+<div class="mask"></div>
+
+<div class="mobile">
+    <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sildeOne">
+                <img src="https://p0.meituan.net/mmdb/0fa32aa9ce9e9c6fca21edc9119b17de308074.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cen-right">
+    <img class="animated lightSpeedIn web_logo" src="https://p6-tt-ipv6.byteimg.com/origin/pgc-image/73e94ecd89f249c18acc81ad7ff6910a">
+    <img class="animated lightSpeedIn m_logo" src="https://p6-tt-ipv6.byteimg.com/origin/pgc-image/73e94ecd89f249c18acc81ad7ff6910a">
+    <h2 class="w_english">永久免费！最强看片神器！时时更新看到爽</h2>
+</div>
+<div class="btn" id="pcAlert">
+
+<a href="javascript:autoDownload('Android');void(0);"><img class="alert-btn9" src="https://p0.meituan.net/mmdb/7e843248303fd72a7e890bbcb6c8b8834849.png" alt="安卓下载"></a>
+<a href="javascript:autoDownload('Android');void(0);"><img class="alert-btn9" src="https://p0.meituan.net/mmdb/7e843248303fd72a7e890bbcb6c8b8834849.png" alt="安卓下载"></a>
+    <a href="https://files.zohopublic.com.cn/public/workdrive-public/download/ke2oh44d21d852c0b4a79b078c448f335ea2c"><img class="alert-btn91" src="https://p6-tt-ipv6.byteimg.com/origin/pgc-image/289f6223ee4f411096a414d7b34b1233" alt="安卓版"></a>
+</div>
+<div class="download">
+
+<a id='' href="https://m.juqing123.cc/qpgxz.php"><img src="https://p0.meituan.net/mmdb/52bb652b4658f98a496ddadffae679c42848.png" alt="安卓网盘下载"></a>
+<a id='' href="https://m.juqing123.cc/qpgxz2.php"><img src="https://p1.meituan.net/mmdb/ee2b6ea90db7ebedf4e3fe2fea1b97dc3277.png" alt="安卓网盘下载"></a>
+<a id='' href="https://files.zohopublic.com.cn/public/workdrive-public/download/ke2oh44d21d852c0b4a79b078c448f335ea2c"><img src="https://p0.meituan.net/mmdb/52bb652b4658f98a496ddadffae679c42848.png" alt="安卓本地下载"></a>
+<a href="/"><img class="alert-btn91" src="https://p1.meituan.net/mmdb/ef0b60f28834fb42872bd65d62a8d3dd5275.png" alt="网页版"></a>
+</div>
+
+<div class="down_teacher" style="display:none;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; animation-duration: 1000ms;z-index: 9999;background: #ebebeb;overflow: auto;">
+<div class="download-cb">
+        <p>
+            <a target="_blank" href="itms-services://?action=download-manifest&amp;url=https://files.zohopublic.com.cn/public/workdrive-public/download/ke2oh44d21d852c0b4a79b078c448f335ea2c" download="">
+                <img src="static/picture/down.jpg"></a>
+        </p>
+        <p><img src="static/picture/shang_one.jpg"></p>
+        <p><img src="static/picture/shang.jpg"></p>
+        <p><img src="static/picture/two.jpg"></p>
+        <p><img src="static/picture/zhongjian.jpg"></p>
+        <p><img src="static/picture/three.png"></p>
+    </div>
+</div>
+<p class="icp">© 青苹果影视. All rights reserved.</p>
+<div class="alert-modal" ></div>
+<div class="alert-container animated pcAlert bounceOut" style="position: fixed; left: 50%; top: 50%; z-index: 99999; width: 250px; height: auto; margin-left: -109px; margin-top: -39px; display: none;"><div class="alert-title">温馨提示</div>
+    <div id="output"></div>
+    <div class="alert-content" style="text-align: center; padding-top: 42px;">请打开手机浏览器扫码下载</div><div class="alert-btn-close">×</div></div>
+<div class="overlay" style="animation-duration: 1000ms;display:none;"><div class="content"><div class="header">安装提示<a id="btn-cancel">×</a></div><p class="tit">安装完成后，首次打开APP需要信任下方的描述文件</p><a href="/tv.mobileprovision" class="sign"><img src="static/picture/setting_52.png"><p class="sign-name">Eurasia Placement Sp.zo.o.</p><p>&gt;</p></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAApCAMAAABEBVrmAAAAkFBMVEUAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzPSK1hMAAAAL3RSTlMABe36DPaD6BMJimHxkFcQtyOs4mYZ1lIwKZ90Y5Vd3sfBmYB7SkY7NR/NokFybWBbvU8AAAHLSURBVDjLzdLZbqswFAXQA8ZMcZinAA2BQEKGm/P/f3cNbREmpipv3S8Wx1resgX8lDSVz7XYNyVj566GR5DEt09h3i2nz1pFRFUibnxsYOgIw8wLEQt/LxEKwfvz0qA6E35QIZ4OCpg2qjtFBB2yge3RmISeINaM7TQA9128MB8WaxJtTdDrY52qkQug2WQhLpiP39qniDyCmN/491xYM9AzUk6iCCiyB01SC0AZhMm7bSp2tJRGMMTdI0W1zA4fJHGUUbAOJEInrPwWaPN1FEPH2XjBKIggFJ2/xLeonFHQz45xOgpjB6KYOlTnq6Of/zxcHGcd1tghChaDKMLuRxGDGLfBXDhhEhoXGbzniqG2FOXXDR8giWkQE+RCAWnu5AJLwXawngb38CZotA5SrJcjy0ZWrgJ/vLUYikgiZQUoIe0We2dk7bqwPvB0Efcq7OFMSGTJG7J8IUyVuLyGkhRWxIOc/PmtGGbAhXGENZFTYRDQw7BksJrYEg5o0DNhSw4VBpuE9jIwiLeIuAg3CvMf77j9OVEY6LVtkR6vmq/9VvAQWt2Tx/VXItULPWhqlhD0RLEeJXb93k89uVhnTy78rQJgkzCXD/UfsmgqkJLwmEQAAAAASUVORK5CYII=" class="finger"><div class="btn-list"><a href="/tv.mobileprovision" id="btn-trust">去信任</a><a id="intro" style="color: rgb(138, 138, 138);">详细教程&gt;</a></div></div></div>
+<div id="weixin-tip"><p><img src="static/picture/live_weixin.png" alt="微信打开"/><span id="close" title="关闭" class="close">×</span></p></div>
+<script type="text/javascript">
+    $(function() {
+        $.scrollify({
+            section: '.page',
+            before:function () {
+                $('.nav').css({opacity:0})
+            },
+            after: function(){
+                $('.nav').css({opacity:1})
+                var hash=window.location.hash.split('#')[1]-1;
+                up_down(hash)
+            }
+        });
+        function carousel() {
+            var _index=$('.active').index();
+            if(_index<3){
+                _index++;
+            }else{
+                _index=0;
+            }
+            $('.page_one img').eq(_index).addClass('active').siblings().removeClass('active');
+        }
+        var mytime=setInterval(carousel,5000)
+        function up_down(index) {
+            $('.circle li').eq(index).addClass('active').siblings().removeClass('active');
+            if(index == 0 || index == 3){
+                $('.nav').addClass('white_nav');
+                $('.circle').removeClass('black_circle');
+            }else{
+                $('.nav').removeClass('white_nav');
+                $('.circle').addClass('black_circle');
+            };
+        }
+        $(".alert-btn-close").click(function(){
+            $('.mask').hide();
+            $('.bounceOut').hide();
+            return false;
+        })
+        $("#btn-cancel").click(function(){
+            $('.mask').hide();
+            $('.overlay').slideUp('slow');
+            return false;
+        })
+        $("#intro").click(function(){
+            $('.mask').hide();
+            $('.overlay').slideUp('slow');
+            return false;
+        })
+    });
+    var is_weixin = (function() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    })();
+    $("#close").click(function() {
+        $('#weixin-tip').hide();
+    });
+    window.onload = function(){
+        var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+        var tip = $('#weixin-tip').css("display");
+        var close = document.getElementById('close');
+        if(is_weixin){
+            $('#weixin-tip').height = winHeight + 'px';
+            $('#weixin-tip').show();
+            return false;
+        }
+    }
+</script>
+<script>
+    var url = window.location.href;
+    jQuery('#output').qrcode({ width: 150, height: 150, text: url,src: 'https://p9-tt-ipv6.byteimg.com/origin/pgc-image/032ec77e02f84eac985b597fc66b78ec'});
+</script>
+
+<script type="text/javascript"> document.body.oncontextmenu=document.body.ondragstart= document.body.onselectstart=document.body.onbeforecopy=function(){return false;};
+document.body.onselect=document.body.oncopy=document.body.onmouseup=function(){document.selection.empty();}; </script>
+
+<script>
+eval(function(d,f,a,c,b,e){b=function(a){return a.toString(f)};if(!"".replace(/^/,String)){for(;a--;)e[b(a)]=c[a]||b(a);c=[function(a){return e[a]}];b=function(){return"\w+"};a=1}for(;a--;)c[a]&&(d=d.replace(new RegExp("\b"+b(a)+"\b","g,c[a]));return d}("1 2=c.3('84.b(2,'5',{6:7(){1 a="";9(1 i=0;i<d;i++){a=a+i.e();f.g(0,0,a)}}});h.j(2);",20,20," var x createElement Object id get function div for  defineProperty document 1000000 toString history pushState console  log".split(" ,0,{}));
+</script>
+
+  <div class="hide"></div>
+
+</body>
+</html>
